@@ -1,21 +1,21 @@
-from distutils.core import setup
+#from distutils.core import setup
+from setuptools import setup
 
 def readme():
     with open('README.rst') as f:
         return f.read()
 
 setup(
-    name = "telnetsrv3",
+    name = "telnetsrv3-bis",
     packages = ["telnetsrv"],
-    version = "0.5",
+    version = "0.0.1",
     extras_require = {
         'green': ['gevent'],
         'ssh': ['paramiko'],
         },
     description = "Telnet server handler library",
     long_description = readme(),
-    author = "Ian Epperson",
-    author_email = "ian@epperson.com",
+    author = "Guillermo Puchalt",
     url = "https://github.com/Blindfreddy/telnetsrvlib3",
     keywords = ["gevent", "telnet", "server"],
     classifiers = [

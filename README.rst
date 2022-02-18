@@ -1,7 +1,7 @@
 telnetsrvlib3
 ============
 
-Telnet server using gevent or threading for python3 - forked from ianepperson/telnetsrvlib which runs only on python2.
+Telnet server using gevent or threading for python3 - forked from Blindfreddy, which was forked from ianepperson/telnetsrvlib which runs only on python2. The reason for this fork is to keep this python module update as much as possible (as it seems that the other two have been gone dark). I'll try my best to make the final adaptations to Python3 and fix bugs.
 
 Copied from http://pytelnetsrvlib.sourceforge.net/
 and modified to support gevent and eventlet, better input handling, clean asynchronous messages and much more.
