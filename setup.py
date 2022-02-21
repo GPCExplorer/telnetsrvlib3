@@ -16,7 +16,7 @@ setup(
     description = "Telnet server handler library",
     long_description = readme(),
     author = "Guillermo Puchalt",
-    url = "https://github.com/Blindfreddy/telnetsrvlib3",
+    url = "https://github.com/GPCExplorer/telnetsrvlib3",
     keywords = ["gevent", "telnet", "server"],
     classifiers = [
         "Programming Language :: Python",
