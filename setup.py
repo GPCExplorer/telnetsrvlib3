@@ -7,7 +7,6 @@ def readme():
 
 setup(
     name = "telnetsrv3-bis",
-    packages = ["telnetsrv"],
     version = "0.0.1",
     extras_require = {
         'green': ['gevent'],
