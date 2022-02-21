@@ -947,9 +947,12 @@ class TelnetHandlerBase(BaseRequestHandler):
         """
         if params:
             cmd = params[0].upper()
-            if self.COMMANDS.has_key(cmd):
+            if cmd in self.COMMANDS:
                 method = self.COMMANDS[cmd]
-                doc = method.__doc__.split("\n")
+                if method.__doc__:
+                    doc = method.__doc__.split("\n")
+                else:
+                    doc=["No inputs described","No short description","No long description"]
                 docp = doc[0].strip()
                 docl = '\n'.join( [l.strip() for l in doc[2:]] )
                 if not docl.strip():  # If there isn't anything here, use line 1
