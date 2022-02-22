@@ -8,6 +8,7 @@ def readme():
 setup(
     name = "telnetsrv3-bis",
     version = "0.0.1",
+    packages=["telnetsrv"],
     extras_require = {
         'green': ['gevent'],
         'ssh': ['paramiko'],
