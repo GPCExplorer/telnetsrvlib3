@@ -975,7 +975,7 @@ class TelnetHandlerBase(BaseRequestHandler):
             if getattr(method, 'hidden', False):
                 continue
             if method.__doc__ == None:
-                self.writeline("no help for command %s" % method)
+                self.writeline("%s has no help defined" % cmd)
                 return
             doc = method.__doc__.split("\n")
             docp = doc[0].strip()
